@@ -46,7 +46,7 @@ export default {
 	// number for the current slide. The function should take in a slide
 	// object and return an array with one string [slideNumber] or
 	// three strings [n1,delimiter,n2]. See #formatSlideNumber().
-	slideNumber: false,
+	slideNumber: "h/v",
 
 	// Can be used to limit the contexts in which the slide number appears
 	// - "all":      Always show the slide number
@@ -120,7 +120,7 @@ export default {
 	// If you're on slide 1.3 and navigate right, you will normally move
 	// from 1.3 -> 2.1. If "grid" is used, the same navigation takes you
 	// from 1.3 -> 2.3.
-	navigationMode: 'default',
+	navigationMode: 'grid',
 
 	// Randomizes the order of slides each time the presentation loads
 	shuffle: false,
@@ -163,7 +163,7 @@ export default {
 	preloadIframes: null,
 
 	// Can be used to globally disable auto-animation
-	autoAnimate: true,
+	autoAnimate: false,
 
 	// Optionally provide a custom element matcher that will be
 	// used to dictate which elements we can animate between.
@@ -172,7 +172,7 @@ export default {
 	// Default settings for our auto-animate transitions, can be
 	// overridden per-slide or per-element via data arguments
 	autoAnimateEasing: 'ease',
-	autoAnimateDuration: 1.0,
+	autoAnimateDuration: 0.1,
 	autoAnimateUnmatched: true,
 
 	// CSS properties that can be auto-animated. Position & scale
@@ -229,7 +229,7 @@ export default {
 	focusBodyOnPageVisibilityChange: true,
 
 	// Transition style
-	transition: 'slide', // none/fade/slide/convex/concave/zoom
+	transition: 'none', // none/fade/slide/convex/concave/zoom
 
 	// Transition speed
 	transitionSpeed: 'default', // default/fast/slow
