@@ -12,6 +12,7 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="plugin/compare/Compare.css">
 	</head>
 	<body>
 		<div class="reveal">
@@ -34,8 +35,9 @@
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 		</script>
+		<script src="plugin/compare/Compare.js"></script>
 	</body>
 </html>
 
-// aws --profile ibl s3 sync reveal.js s3://reveal.internationalbrainlab.org --exclude reveal.js/node_modules
+// aws --profile ibl s3 sync ~/Documents/JS/reveal.js s3://reveal.internationalbrainlab.org --exclude reveal.js/node_modules
 // http://reveal.internationalbrainlab.org.s3-website-us-east-1.amazonaws.com
